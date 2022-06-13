@@ -21,8 +21,6 @@ function setup(){
   angleMode(degrees);
   let cnv = createCanvas(800, 800);
   cnv.mousePressed(canvasPressed);
-  //background(255);
-  //text('tap here to play', 10, 20);
 }
 
 function canvasPressed() {
@@ -31,14 +29,8 @@ function canvasPressed() {
   mySound.play();
 }
 
-//draw loops forever
 function draw(){
   background(255);
-  //a customise shape for mouse
-  //noCursor();
-  //noStroke();
-  //fill('black');
-  //circle(mouseX, mouseY,5);
   
   //main graph
   push();
@@ -56,35 +48,5 @@ function draw(){
     arc(0, 0, cirSize + gap * i,cirSize + gap * i,angle*i,360-angle/2);
   }
   pop();
-  
-  //title subtitle
-  //push();
-  //translate(width/2,height-80);
-  //noStroke();
-  //fill('white')
-  //textFont('Arial');
-  //textSize(25);
-  //textAlign(CENTER, CENTER);
-  //text('Coded By Yaz',0,0);
-  //textSize(20);
-  //text('Artist & Designer',0,20);
-  //pop();
-  
-  //boarder
-  //push();
-  //translate(width/2,height/2);
-  //noFill();
-  //stroke('black');
-  //strokeWeight(3);
-  //rectMode(CENTER);
-  //rect(0, 0, rectSize, rectSize);
-  
-  //random noise as background
  
-  //stroke(152,251,152);
-  //strokeWeight(2);
-  //for(let i =0; i<ptNum; i++){ 
-  //point(random(-rectSize / 2, rectSize / 2), random(-rectSize / 2, rectSize / 2));
-  //}  
-  //pop();
 }
